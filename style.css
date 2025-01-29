@@ -1,0 +1,575 @@
+*{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5faff;
+    height: 16vh;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav ul li {
+    padding: 0px 15px;
+    align-items: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li span {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0px 12px;
+}
+
+#left {
+    width: 100px;
+    height: 40px;
+}
+
+#mid {
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #e7ebee;
+    padding: 2px 23px;
+    margin: 0px 10px;
+}
+
+#right {
+    background-color: #e7ebee;
+    border-radius: 10px;
+}
+
+#nav_btn {
+    border-radius: 13px;
+    padding: 12px;
+    border: 1px solid red;
+    color: white;
+    background-color: red;
+    box-shadow: 1px 2px 5px black;
+}
+
+#nav_btn:hover {
+    cursor: pointer;
+}
+
+.main img {
+    height: 70vh;
+    width: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: fixed;
+}
+
+#main-btn {
+    padding: 8px 10px;
+    margin: 20px 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    margin: auto;
+    width: 38%;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#main-btn:hover {
+    box-shadow: 0px 2px 7px;
+}
+
+#main-btn strong {
+    color: white;
+}
+
+#menu {
+    margin: 22px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menu img {
+    height: 175px;
+    width: 210px;
+}
+
+.item {
+    height: 246px;
+    width: 211px;
+    text-align: center;
+    background-color: #e7ebee;
+    border-radius: 200px 201px 12px 232px;
+}
+
+.item:hover {
+    transform: translateY(-12px);
+    cursor: pointer;
+}
+
+.item p {
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+#menu hr {
+    width: 64px;
+    border-radius: 20px;
+    border: 2px solid red;
+}
+
+section h1 {
+    font-size: 40px;
+    margin-left: 42px;
+}
+
+h1 hr {
+    width: 86px;
+    border-radius: 20px;
+    border: 2px solid red;
+    margin: unset;
+}
+
+#seller {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 12px;
+    height: 329px;
+    width: 222px;
+    background-color: #e7ebee;
+    cursor: pointer;
+}
+
+.card img {
+    height: 175px;
+    width: 200px;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card h3 {
+    padding: 4px 10px;
+    width: 81px;
+    color: white;
+    background-color: red;
+    border-radius: 0px 14px 15px 0px;
+}
+
+.card span {
+    font-size: x-small;
+}
+
+/*                          topdeal               */
+#topdeal {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#topdeal img {
+    height: 175px;
+    width: 195px;
+}
+
+.deal {
+    background-color: #e7ebee;
+    height: 375px;
+    width: 220px;
+    padding: 0px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
+
+#topdeal img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.top-btn {
+    margin: auto;
+    display: block;
+    width: 103px;
+    background-color: #ffffff;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 8px 0px;
+    font-weight: 700;
+    color: white;
+}
+
+.top-btn:hover {
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+.up-logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    border-radius: 0px 0px 12px 12px;
+    height: 24px;
+    width: 2px;
+    margin: 0px 4px;
+    padding: 0px 6px;
+    background-color: red;
+}
+
+/*               about             */
+.aboutus {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.about {
+    margin: 0px 15px;
+}
+
+.about img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    margin: 0px 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 12px;
+}
+
+#info-right {
+    width: 72%;
+    height: 69vh;
+}
+
+.info-btn {
+    padding: 10px 43px;
+    border: 1px solid red;
+    border-radius: 9px;
+    color: white;
+    background-color: red;
+}
+
+.info-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/*           footer              */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.link {
+    margin: 0px 10px;
+}
+
+#kfc-link img {
+    margin: 0px 37px;
+    height: 50px;
+}
+
+.footer-mid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box p:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.rights {
+    margin: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights h4 {
+    margin: 0px;
+    color: red;
+}
+
+.right-2 p {
+    margin: 0%;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1015px) {
+    .item {
+        margin: 9px 25px;
+        pad
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .card {
+        margin: 12px 12px;
+        height: 320px;
+    }
+
+    .card h3 {
+        color: black;
+        background-color: blueviolet;
+        padding: 10px;
+    }
+}
+
+/*                     720                */
+@media only screen and (max-width:720px) {s
+    body {
+        /* background-color: blue;s */
+    }
+
+    #left {
+        width: 68px;
+        height: 30px;
+    }
+
+    .logo {
+        height: 27px;
+        width: 23px;
+    }
+
+    #right {
+        display: flex;
+    }
+
+    #navbar {
+        height: 77px;
+    }
+
+    #mid {
+        padding: 2px 1px;
+    }
+
+    #nav_btn {
+        border-radius: 10px;
+        padding: 6px;
+    }
+
+    .card h2 {
+        margin: 0px 0px;
+    }
+
+    .card h3 {
+        color: white;
+        background-color: blueviolet;
+        padding: 0px;
+    }
+
+    .card {
+        margin: 12px 12px;
+        height: 240px;
+    }
+
+    .card-i {
+        display: flex;
+        position: relative;
+        top: -36px;
+        justify-content: space-around;
+    }
+
+    .card img {
+        height: 151px;
+        width: 157px;
+    }
+
+    .deal {
+        height: 273px;
+        margin: 20px 0px;
+    }
+
+    .deal p {
+        margin: 7px 0px;
+    }
+
+    #topdeal img {
+        margin: auto;
+        /* align-items: center; */
+        height: 169px;
+        width: 141px;
+    }
+
+    #topdeal h3 {
+        margin: 7px 0px;
+    }
+
+    #topdeal {
+        margin: 3px 0px;
+    }
+
+    .about img {
+        height: 195px;
+    }
+
+    .info {
+        height: 195px;
+    }
+
+    #info-right {
+        width: 56%;
+        height: 32vh;
+    }
+
+    #info-right h2 {
+        font-size: 17px;
+    }
+
+    .main img {
+        height: 100vh;
+    }
+
+    section h1 {
+        font-size: 25px;
+    }
+
+    #menu img {
+        height: 138px;
+        width: 163px;
+    }
+
+    .item {
+        height: 192px;
+        margin: 10px 26px;
+    }
+
+    .main img {
+        height: 400px;
+    }
+}
+
+/*                     575                */
+@media only screen and (max-width:580px) {
+    body {
+        /* background-color: aqua; */
+    }
+
+    .main img {
+        height: 250px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #mid {
+        display: none;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #login {
+        display: none;
+    }
+    .card{
+        margin: 14px 18px;
+        height: 262px;
+    }
+    .deal {
+        HEIGHT: 324px;
+        margin: 20px 6px;
+    }
+    .aboutus {
+        padding: 15px 0px;
+        margin: 12px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about img {
+        width: 404px;
+        height: 174px;
+    }
+    .app {
+        margin: 30px 0px;
+        display: flex;
+flex-direction: column;
+    }
+    .info img {
+        margin: auto;
+        width: 366px;
+        height: 270px;
+        border-radius: 12px;
+    }
+    #info-right {
+        margin: auto;
+        width: 250px;
+        height: 132px;
+    }
+    .info {
+        height: 272px;
+    }
+    .deal p {
+        height: 37px;
+        margin: 7px 0px;
+    }
+}
